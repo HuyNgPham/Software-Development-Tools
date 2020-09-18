@@ -1,0 +1,3 @@
+Next we’ll add a new line of text to tools.txt, 
+and create a commit of the change using the green button at the bottom of the page. 
+However, you can’t see these changes locally.
