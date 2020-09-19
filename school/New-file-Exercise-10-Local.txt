@@ -1,0 +1,1 @@
+Let’s test merging in practice. We’ll start by creating two non-conflicting commits by creating two new files, one in the local version
