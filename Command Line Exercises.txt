@@ -1,0 +1,376 @@
+Exercise 1:
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~
+$ ls
+'3D Objects'/
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+'Creative Cloud Files'/
+ debug.log
+ Desktop/
+ Documents/
+ Downloads/
+ eclipse/
+ eclipse-workspace/
+ Favorites/
+ IntelGraphicsProfiles/
+ Links/
+'Local Settings'@
+ MicrosoftEdgeBackups/
+ Music/
+'My Documents'@
+ NetHood@
+ NTUSER.DAT
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TM.blf
+ NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000002.regtrans-ms
+ NTUSER.DAT{5bd21f13-d9a0-11ea-ae79-d46d6d933b67}.TM.blf
+ NTUSER.DAT{5bd21f13-d9a0-11ea-ae79-d46d6d933b67}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{5bd21f13-d9a0-11ea-ae79-d46d6d933b67}.TMContainer00000000000000000002.regtrans-ms
+ NTUSER.DAT{9ed05667-e54a-11ea-ae97-d46d6d933b67}.TM.blf
+ NTUSER.DAT{9ed05667-e54a-11ea-ae97-d46d6d933b67}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{9ed05667-e54a-11ea-ae97-d46d6d933b67}.TMContainer00000000000000000002.regtrans-ms
+ NTUSER.DAT{b374fd12-f208-11ea-aeab-d46d6d933b67}.TxR.0.regtrans-ms
+ NTUSER.DAT{b374fd12-f208-11ea-aeab-d46d6d933b67}.TxR.1.regtrans-ms
+ NTUSER.DAT{b374fd12-f208-11ea-aeab-d46d6d933b67}.TxR.2.regtrans-ms
+ NTUSER.DAT{b374fd12-f208-11ea-aeab-d46d6d933b67}.TxR.blf
+ NTUSER.DAT{b374fd13-f208-11ea-aeab-d46d6d933b67}.TM.blf
+ NTUSER.DAT{b374fd13-f208-11ea-aeab-d46d6d933b67}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{b374fd13-f208-11ea-aeab-d46d6d933b67}.TMContainer00000000000000000002.regtrans-ms
+ NTUSER.DAT{f9765a0d-d9a3-11ea-ae7a-d46d6d933b67}.TM.blf
+ NTUSER.DAT{f9765a0d-d9a3-11ea-ae7a-d46d6d933b67}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{f9765a0d-d9a3-11ea-ae7a-d46d6d933b67}.TMContainer00000000000000000002.regtrans-ms
+ ntuser.ini
+ OneDrive/
+ Pictures/
+ PrintHood@
+ pspp.jnl
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+ Software/
+'Software Developmemnt Tools'/
+'Start Menu'@
+ story.txt
+ Templates@
+ Videos/
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~
+$ ls -ls Recent
+0 lrwxrwxrwx 1 Huy Pham 197609 58 Jul 22 22:32 Recent -> '/c/Users/Huy Pham/AppData/Roaming/Microsoft/Windows/Recent'/
+
+
+Exercise 2:
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~
+$ mkdir "Software Development Tools"
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~
+$ cd "C:\Users\Huy Pham\Software Development Tools"
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools
+$ mkdir tools
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools
+$ ls
+tools/
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools
+$ cd ../..
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 /c/Users
+$ cd De
+Default/                                   defaultuser100000/                         defaultuser100000.DESKTOP-O8A0RIT.000.001/
+Default User/                              defaultuser100000.DESKTOP-O8A0RIT/         defaultuser100001/
+defaultuser1.DESKTOP-O8A0RIT.000.001.002/  defaultuser100000.DESKTOP-O8A0RIT.000/     desktop.ini
+
+
+Exercise 3
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools
+$ ls
+example.txt  tools/
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools
+$ nano example.txt
+
+
+Exercise 4
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools
+$ cat example.txt
+Example!
+
+
+Exercise 5:
+
+Insert mode: insert/type texts. Use i for insert mode.
+
+Command mode: Where we put commands to the editor to get things done. Press ESC for cammnd mode.
+
+Use :q to quit the editor.
+
+
+Exercise 6:
+Huy Pham@DESKTOP-O8A0RIT MINGW64 /c/Users
+$ cd "C:\Users\Huy Pham\Software Development Tools"
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools
+$ ls
+example.txt  tools/
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools
+$ mkdir school
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools
+$ ls
+example.txt  school/  tools/
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools
+$ cd "C:\Users\Huy Pham\Software Development Tools\school"
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/school
+$ mkdir tools CS1 CS2
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/school
+$ ls
+CS1/  CS2/  tools/
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/school
+$ cd "C:\Users\Huy Pham\Software Development Tools\school\tools"
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/school/tools
+$ touch cmnd-line.txt
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/school/tools
+$ ls
+cmnd-line.txt
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/school/tools
+$ cd ..
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/school
+$ cd "C:\Users\Huy Pham\Software Development Tools\school\CS1"
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/school/CS1
+$ touch lecture1.txt
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/school/CS1
+$ ls
+lecture1.txt
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/school/CS1
+$ cd "C:\Users\Huy Pham\Software Development Tools\school\CS2"
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/school/CS2
+$ touch lecture2.txt java.txt
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/school/CS2
+$ ls
+java.txt  lecture2.txt
+
+Exercise 6:
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/school/CS1
+$ cd "C:\Users\Huy Pham\Software Development Tools\school\tools"
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/school/tools
+$ mv cmnd-line.txt command-line.txt
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/school/tools
+$ ls
+command-line.txt
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/school/tools
+$ cd "C:\Users\Huy Pham\Software Development Tools\school\CS1"
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/school/CS1
+$ ls
+lecture1.txt
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/school/CS1
+$ ls
+lecture1.txt
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/school/CS1
+$ mv lecture1.txt intro.txt
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/school/CS1
+$ ls
+intro.txt
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/school/CS1
+$ cd "C:\Users\Huy Pham\Software Development Tools\school\CS2"
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/school/CS2
+$ ls
+java.txt  lecture2.txt
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/school/CS2
+$ mv java.txt lecture1.txt
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/school/CS2
+$ ls
+lecture1.txt  lecture2.txt
+
+Exercise 7:
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/school/CS2
+$ cd ..
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/school
+$ cd ..
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools
+$ rm -r school
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools
+$ ls
+example.txt  tools/
+
+
+Exercise 8:
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools
+$ mkdir pictures
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools
+$ ls
+example.txt  pictures/  tools/
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools
+$ cd "C:\Users\Huy Pham\Software Development Tools\pictures"
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/pictures
+$ ls
+'I am not a text file.img'
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/pictures
+$ touch "I am a file text.txt"
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/pictures
+$ ls
+'I am a file text.txt'  'I am not a text file.img'
+
+
+Exercise 9:
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/pictures
+$ cd ..
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools
+$ ls
+example.txt  pictures/  tools/
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools
+$ nano example.txt
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools
+$ cat example.txt
+Example!
+
+i am
+inside
+the example file
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools
+$ tail -n 1 example.txt
+the example file
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools
+$ head -n 2 example.txt
+Example!
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools
+$ touch diary.txt
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools
+$ nano diary.txt
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools
+$ cat diary.txt
+October 6th
+
+Dear diary,
+
+I can't wait to tell you all my secrets.
+
+Today was a good day. I was appointed the secretary of my student association.
+
+I won't be secretive, I'm so happy!
+
+I'll write again soon.
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools
+$ grep "secrets" diary.txt
+I can't wait to tell you all my secrets.
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools
+$ grep "secret" diary.txt
+I can't wait to tell you all my secrets.
+Today was a good day. I was appointed the secretary of my student association.
+I won't be secretive, I'm so happy!
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools
+$ ls | grep *.txt
+diary.txt    example.txt
+
+
+Exercise 10:
+
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools
+$ ls
+diary.txt  example.txt  pictures/  tools/
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools
+$ touch notes.txt
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools
+$ ls
+diary.txt  example.txt  notes.txt  pictures/  tools/
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools
+$ nano notes.txt
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools
+$ cat notes.txt
+monday intro to cs: Hello world
+monday cafeteria: Fish shoup
+tuesday intro to cs: A class can implement an interface
+tuesday intro to cs: Turing tests are hard to pass
+tuesday cafeteria: Chicken and noodles
+wednesday intro to cs: A cs program has to have a main method
+wednesday intro to cs: The internet is a big place
+wednesday cafeteria: beans and rice
+thursday cafeteria: Potatos and gravy
+thursday console: The command line is a black box
+friday cafeteria: Pizza
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools
+$ grep -i "cafeteria" notes.txt >cafeteria.txt
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools
+$ cat cafeteria.txt
+monday cafeteria: Fish shoup
+tuesday cafeteria: Chicken and noodles
+wednesday cafeteria: beans and rice
+thursday cafeteria: Potatos and gravy
+friday cafeteria: Pizza
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools
+$ sed -i "/\b\(cafeteria\)\b/d" notes.txt
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools
+$ cat notes.txt
+monday intro to cs: Hello world
+tuesday intro to cs: A class can implement an interface
+tuesday intro to cs: Turing tests are hard to pass
+wednesday intro to cs: A cs program has to have a main method
+wednesday intro to cs: The internet is a big place
+thursday console: The command line is a black box
