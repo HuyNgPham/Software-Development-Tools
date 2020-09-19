@@ -1,3 +1,5 @@
+"Let’s change the first row of tools.txt via GitHub. This will create a new commit to the remote version."
+
 Next we’ll add a new line of text to tools.txt, 
 and create a commit of the change using the green button at the bottom of the page. 
 However, you can’t see these changes locally.
