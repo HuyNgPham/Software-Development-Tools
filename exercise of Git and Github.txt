@@ -1,0 +1,481 @@
+Exercise 7:
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/Git (master)
+$ git pull
+Enter passphrase for key '/c/Users/Huy Pham/.ssh/id_rsa':
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (4/4), 770 bytes | 36.00 KiB/s, done.
+From github.com:HuyNgPham/Software-Development-Tools
+   ca5d713..c870f85  master     -> origin/master
+Updating ca5d713..c870f85
+Fast-forward
+ school/New-file | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 school/New-file
+
+Exercise 8:
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/Git/school (master)
+$ git pull
+Enter passphrase for key '/c/Users/Huy Pham/.ssh/id_rsa':
+Updating c870f85..5db49e5
+Fast-forward
+ school/tools.txt | 2 ++
+ 1 file changed, 2 insertions(+)
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/Git/school (master)
+$ ls
+New-file  tools.txt
+
+
+Exercise 9:
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/Git (master)
+$ cd "C:\Users\Huy Pham\Software Development Tools\Git\school"
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/Git/school (master)
+$ notepad tools.txt
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/Git/school (master)
+$ git pull
+Enter passphrase for key '/c/Users/Huy Pham/.ssh/id_rsa':
+remote: Enumerating objects: 7, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (4/4), 987 bytes | 41.00 KiB/s, done.
+From github.com:HuyNgPham/Software-Development-Tools
+   c870f85..5db49e5  master     -> origin/master
+error: Your local changes to the following files would be overwritten by merge:
+        school/tools.txt
+Please commit your changes or stash them before you merge.
+Aborting
+Updating c870f85..5db49e5
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/Git/school (master)
+$ git stash
+Saved working directory and index state WIP on master: c870f85 Create New-file
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/Git/school (master)
+$ git pull
+Enter passphrase for key '/c/Users/Huy Pham/.ssh/id_rsa':
+Updating c870f85..5db49e5
+Fast-forward
+ school/tools.txt | 2 ++
+ 1 file changed, 2 insertions(+)
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/Git/school (master)
+$ cd ..
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/Git (master)
+$ cat story.txt
+Exercise 3: Practising working with commits
+Create a folder on the command line and turn it into a Git project.
+Create a file called “story.txt” in your project. Add a lot of text inside.
+Add another file called “shopping_list.txt” to the project, and write down what you need from the store (or just many rows of text).
+Create a subfolder called “school” into the project, and create a file called “tools.txt” inside. You will need these files in the future exercises.
+After doing all the changes described above, create a total of three commits: one, where you add the story, a second on where you add the shopping list, and a third one where you add the school folder. Make sure that each commit message is truly descriptive.
+Using the command “git log”, check that you have properly created three commits.
+Add something new to the shopping list, and create another commit. Use the command “git add -p”.
+Make sure you can see all the commits in the output of “git log”.
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/Git (master)
+$ notepad story.txt
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/Git (master)
+$ cat story.txt
+Exercise 3: Practising working with commits
+Create a folder on the command line and turn it into a Git project.
+Create a file called “story.txt” in your project. Add a lot of text inside.
+Add another file called “shopping_list.txt” to the project, and write down what you need from the store (or just many rows of text).
+Create a subfolder called “school” into the project, and create a file called “tools.txt” inside. You will need these files in the future exercises.
+After doing all the changes described above, create a total of three commits: one, where you add the story, a second on where you add the shopping list, and a third one where you add the school folder. Make sure that each commit message is truly descriptive.
+Using the command “git log”, check that you have properly created three commits.
+Add something new to the shopping list, and create another commit. Use the command “git add -p”.
+Make sure you can see all the commits in the output of “git log”.
+
+!!!!!!!!! Edit the first sentence of the file story.txt in GitHub and create a commit. !!!!!!!!!!
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/Git (master)
+$ git fetch
+Enter passphrase for key '/c/Users/Huy Pham/.ssh/id_rsa':
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 790 bytes | 34.00 KiB/s, done.
+From github.com:HuyNgPham/Software-Development-Tools
+   5db49e5..03397b1  master     -> origin/master
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/Git (master)
+$ git add story.txt
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/Git (master)
+$ git commit -m story.txt
+[master 49312f1] story.txt
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/Git (master)
+$ cat story.txt
+Exercise 3: Practising working with commits
+Create a folder on the command line and turn it into a Git project.
+Create a file called “story.txt” in your project. Add a lot of text inside.
+Add another file called “shopping_list.txt” to the project, and write down what you need from the store (or just many rows of text).
+Create a subfolder called “school” into the project, and create a file called “tools.txt” inside. You will need these files in the future exercises.
+After doing all the changes described above, create a total of three commits: one, where you add the story, a second on where you add the shopping list, and a third one where you add the school folder. Make sure that each commit message is truly descriptive.
+Using the command “git log”, check that you have properly created three commits.
+Add something new to the shopping list, and create another commit. Use the command “git add -p”.
+Make sure you can see all the commits in the output of “git log”.
+
+!!!!!!!!! Edit the first sentence of the file story.txt in GitHub and create a commit. !!!!!!!!!!
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/Git (master)
+$ git log
+commit 49312f10586780c6606ac363fa0289e9f23195e9 (HEAD -> master)
+Author: HuyNgPham <Huy.Pham@Centria.Fi>
+Date:   Sat Sep 19 13:22:55 2020 +0300
+
+    story.txt
+
+commit 5db49e51515947ea78fcb4b0420c742b19e6116f
+Author: HuyNgPham <70639144+HuyNgPham@users.noreply.github.com>
+Date:   Sat Sep 19 13:10:35 2020 +0300
+
+    Update tools.txt
+
+    Let’s change the first row of tools.txt via GitHub. This will create a new commit to the remote version.
+
+commit c870f85f437970ac22c269248a0e9e67b05851db
+Author: HuyNgPham <70639144+HuyNgPham@users.noreply.github.com>
+Date:   Sat Sep 19 13:08:27 2020 +0300
+
+    Create New-file
+
+commit ca5d71389f3988b51113371720f34d313e08f6d7
+Author: HuyNgPham <70639144+HuyNgPham@users.noreply.github.com>
+Date:   Sat Sep 19 13:06:11 2020 +0300
+
+    Update tools.txt
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/Git (master)
+$ git pull
+Enter passphrase for key '/c/Users/Huy Pham/.ssh/id_rsa':
+Auto-merging story.txt
+CONFLICT (content): Merge conflict in story.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/Git (master|MERGING)
+$ git add story.txt
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/Git (master|MERGING)
+$ git commit -m "Git conflict solved!"
+[master 421256e] Git conflict solved!
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/Git (master)
+$ git pull
+Enter passphrase for key '/c/Users/Huy Pham/.ssh/id_rsa':
+Already up to date.
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/Git (master)
+$ cat story.txt
+Edit the first sentence of the file story.txt in GitHub and create a commit. (Exercise 9)
+
+Exercise 3: Practising working with commits
+Create a folder on the command line and turn it into a Git project.
+Create a file called “story.txt” in your project. Add a lot of text inside.
+Add another file called “shopping_list.txt” to the project, and write down what you need from the store (or just many rows of text).
+Create a subfolder called “school” into the project, and create a file called “tools.txt” inside. You will need these files in the future exercises.
+After doing all the changes described above, create a total of three commits: one, where you add the story, a second on where you add the shopping list, and a third one where you add the school folder. Make sure that each commit message is truly descriptive.
+Using the command “git log”, check that you have properly created three commits.
+Add something new to the shopping list, and create another commit. Use the command “git add -p”.
+<<<<<<< HEAD
+Make sure you can see all the commits in the output of “git log”.
+
+!!!!!!!!! Edit the first sentence of the file story.txt in GitHub and create a commit. !!!!!!!!!!
+||||||| 5db49e5
+Make sure you can see all the commits in the output of “git log”.
+=======
+Make sure you can see all the commits in the output of “git log”.
+>>>>>>> 03397b177c9f87b6fd94b176358e32d95219107b
+
+
+Exercise 10:
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/Git (master)
+$ cd "C:\Users\Huy Pham\Software Development Tools\Git\school"
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/Git/school (master)
+$ touch New-file-Exercise-10-Local.txt
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/Git/school (master)
+$ ls
+New-file  New-file-Exercise-10-Local.txt  tools.txt
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/Git/school (master)
+$ Notepad New-file-Exercise-10-Local.txt
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/Git/school (master)
+$ cat New-file-Exercise-10-Local.txt
+Let’s test merging in practice. We’ll start by creating two non-conflicting commits by creating two new files, one in the local version
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/Git/school (master)
+$ git add New-file-Exercise-10-Local.txt
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/Git/school (master)
+$ git commit -m "Create a local file for exercise 10!"
+[master eb3d074] Create a local file for exercise 10!
+ 1 file changed, 1 insertion(+)
+ create mode 100644 school/New-file-Exercise-10-Local.txt
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/Git/school (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 4 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    ../New-file-Exercise-10-Local.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../030466
+        ../030466.pub
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/Git/school (master)
+$ git fetch
+Enter passphrase for key '/c/Users/Huy Pham/.ssh/id_rsa':
+remote: Enumerating objects: 8, done.
+remote: Counting objects: 100% (8/8), done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 6 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), 1.55 KiB | 54.00 KiB/s, done.
+From github.com:HuyNgPham/Software-Development-Tools
+   03397b1..bdbd8d3  master     -> origin/master
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/Git/school (master)
+$ git status
+On branch master
+Your branch and 'origin/master' have diverged,
+and have 4 and 2 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    ../New-file-Exercise-10-Local.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../030466
+        ../030466.pub
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/Git/school (master)
+$ git pull
+Enter passphrase for key '/c/Users/Huy Pham/.ssh/id_rsa':
+hint: Waiting for your editor to close the file... unix2dos: converting file C:/Users/Huy Pham/Software Development Tools/Git/.git/MERGE_MSG to DOS format...
+dos2unix: converting file C:/Users/Huy Pham/Software Development Tools/Git/.git/MERGE_MSG to Unix format...
+Merge made by the 'recursive' strategy.
+ school/New-file-Exercise-10-Remote | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 school/New-file-Exercise-10-Remote
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/Git/school (master)
+$ git fetch
+Enter passphrase for key '/c/Users/Huy Pham/.ssh/id_rsa':
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/Git/school (master)
+$ git push
+Enter passphrase for key '/c/Users/Huy Pham/.ssh/id_rsa':
+Enumerating objects: 25, done.
+Counting objects: 100% (23/23), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (15/15), done.
+Writing objects: 100% (16/16), 1.72 KiB | 588.00 KiB/s, done.
+Total 16 (delta 8), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (8/8), completed with 3 local objects.
+To github.com:HuyNgPham/Software-Development-Tools.git
+   bdbd8d3..10d32cf  master -> master
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/Git/school (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    ../New-file-Exercise-10-Local.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../030466
+        ../030466.pub
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Exercise 11
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/Git/school (master)
+$ touch exercise11-local.txt
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/Git/school (master)
+$ ls
+exercise11-local.txt  New-file-Exercise-10-Local.txt  tools.txt
+New-file              New-file-Exercise-10-Remote
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/Git/school (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    ../New-file-Exercise-10-Local.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../030466
+        ../030466.pub
+        exercise11-local.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/Git/school (master)
+$ git fetch
+Enter passphrase for key '/c/Users/Huy Pham/.ssh/id_rsa':
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 4 (delta 2), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (4/4), 765 bytes | 45.00 KiB/s, done.
+From github.com:HuyNgPham/Software-Development-Tools
+   10d32cf..6c97f71  master     -> origin/master
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/Git/school (master)
+$ git status
+On branch master
+Your branch is behind 'origin/master' by 1 commit, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    ../New-file-Exercise-10-Local.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../030466
+        ../030466.pub
+        exercise11-local.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/Git/school (master)
+$ git pull
+Enter passphrase for key '/c/Users/Huy Pham/.ssh/id_rsa':
+Updating 10d32cf..6c97f71
+Fast-forward
+ school/Exercise 11 | 2 ++
+ 1 file changed, 2 insertions(+)
+ create mode 100644 school/Exercise 11
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/Git/school (master)
+$ git push
+Enter passphrase for key '/c/Users/Huy Pham/.ssh/id_rsa':
+Everything up-to-date
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/Git/school (master)
+$ git log
+commit 6c97f71aca4c4bef3faf63afe88a86e434a53a7d (HEAD -> master, origin/master)
+Author: HuyNgPham <70639144+HuyNgPham@users.noreply.github.com>
+Date:   Sat Sep 19 15:21:13 2020 +0300
+
+    Create Exercise 11
+
+    Exercise 11!
+
+commit 10d32cf6cdd510d82e215cceb4e267dd0913e10e
+Merge: eb3d074 bdbd8d3
+Author: HuyNgPham <Huy.Pham@Centria.Fi>
+Date:   Sat Sep 19 13:50:29 2020 +0300
+
+    Merge branch 'master' of github.com:HuyNgPham/Software-Development-Tools into master
+
+commit eb3d0748923ba6077b92d8d149641e01ae62ae22
+Author: HuyNgPham <Huy.Pham@Centria.Fi>
+Date:   Sat Sep 19 13:48:37 2020 +0300
+
+    Create a local file for exercise 10!
+
+commit 7fe340dd13698d6167fa90a6a2ee5d690889ec2d
+Author: HuyNgPham <Huy.Pham@Centria.Fi>
+Date:   Sat Sep 19 13:39:32 2020 +0300
+
+    Create commit for local file Exercise 10
+
+commit bdbd8d395950dd757e4d0267068ec7ae752af449
+Author: HuyNgPham <70639144+HuyNgPham@users.noreply.github.com>
+Date:   Sat Sep 19 13:38:25 2020 +0300
+
+    Rename New-file-Exercise-10 to New-file-Exercise-10-Remote
+      0 [sig] bash 2167! sigpacket::process: Suppressing signal 18 to win32 process (pid 0)
+
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/Git/school (master)
+$
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/Git/school (master)
+$ ls
+'Exercise 11'           New-file                         New-file-Exercise-10-Remote
+ exercise11-local.txt   New-file-Exercise-10-Local.txt   tools.txt
+
+Exercise 13:
+
+Q: How to find out the names and addresses of the remote repositories of a project. 
+
+A:
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/Git (master)
+$ git remote -v
+origin  git@github.com:HuyNgPham/Software-Development-Tools.git (fetch)
+origin  git@github.com:HuyNgPham/Software-Development-Tools.git (push)
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/Git (mas
+$ git remote
+origin
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/Git (master)
+$ git branch -r
+  origin/master
+
+Q:  How to clone remote repository.
+
+A:
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/Git (master)
+$ git clone https://github.com/centria/problem-solving-and-fundamentals-of-programming.git
+Cloning into 'problem-solving-and-fundamentals-of-programming'...
+remote: Enumerating objects: 70, done.
+remote: Counting objects: 100% (70/70), done.
+remote: Compressing objects: 100% (63/63), done.
+remote: Total 70 (delta 7), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (70/70), 109.48 KiB | 393.00 KiB/s, done.
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/Git (master)
+$ cd problem-solving-and-fundamentals-of-programming
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/Git/problem-solving-and-fundamentals-of-programming (master)
+$ git remote -v
+origin  https://github.com/centria/problem-solving-and-fundamentals-of-programming.git (fetch)
+origin  https://github.com/centria/problem-solving-and-fundamentals-of-programming.git (push)
+
+Huy Pham@DESKTOP-O8A0RIT MINGW64 ~/Software Development Tools/Git/problem-solving-and-fundamentals-of-programming (master)
+$ git branch -r
+  origin/HEAD -> origin/master
+  origin/master
