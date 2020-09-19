@@ -1,3 +1,5 @@
+Edit the first sentence of the file story.txt in GitHub and create a commit. (Exercise 9)
+
 Exercise 3: Practising working with commits
 Create a folder on the command line and turn it into a Git project.
 Create a file called “story.txt” in your project. Add a lot of text inside.
